@@ -11,7 +11,7 @@ public class ContaComum {
     		this.saldo = saldo;
     }
 
-    
+ // Positivo de 0 a 100
     public void deposita(double valor) {
         this.saldo += valor;
     }

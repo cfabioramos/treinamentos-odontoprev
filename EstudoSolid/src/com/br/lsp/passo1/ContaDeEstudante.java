@@ -1,6 +1,6 @@
 package com.br.lsp.passo1;
 
-public class ContaDeEstudante {
+public class ContaDeEstudante implements IContaQueRende{
 	
 	private ManipuladorDeSaldo m;
 	private int milhas;
@@ -21,5 +21,9 @@ public class ContaDeEstudante {
 	public int getMilhas()  {
         return milhas;
     }
+
+	@Override
+	public void rende(double taxa) {
+	}
 	
 }

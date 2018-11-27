@@ -8,6 +8,7 @@ public class ContaDeEstudante extends ContaComum {
 		super(saldo);
 	}
 	
+	// aceito apenas de 20 a 30
 	public void deposita(double valor)  {
         super.deposita(valor);
         this.milhas += (int)valor;

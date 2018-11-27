@@ -1,6 +1,6 @@
 package com.br.lsp.passo1;
 
-public class ContaComum {
+public class ContaComum implements IContaQueRende {
 
 	private ManipuladorDeSaldo manipulador;
 
@@ -8,8 +8,8 @@ public class ContaComum {
         this.manipulador = new ManipuladorDeSaldo();
 	}
 	
-	public void rende()  { 
-        this.manipulador.rende(1.1);
+	public void rende(double taxa)  { 
+        this.manipulador.rende(taxa);
     }
 	
 	public void saca(double valor, boolean isCaixaEletronico)  {
